@@ -12,6 +12,9 @@ export default function HeaderUI() {
       <Menu.Item key="1">
         <div>English</div>
       </Menu.Item>
+      <Menu.Item key="1">
+        <div>Chinese</div>
+      </Menu.Item>
       <Menu.Divider />
     </Menu>
   );
