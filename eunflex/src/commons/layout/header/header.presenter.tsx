@@ -12,25 +12,29 @@ export default function HeaderUI() {
       <Menu.Item key="1">
         <div>English</div>
       </Menu.Item>
-      <Menu.Item key="1">
-        <div>Chinese</div>
-      </Menu.Item>
       <Menu.Divider />
     </Menu>
   );
 
   return (
     <S.Wrapper>
-      <img src="/netflix.png" />
-      <S.Language>
-        <S.WorldImage src="/world.png/" />
-        <S.Breadcrumb overlay={menu} trigger={["click"]}>
-          <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-            English <DownOutlined />
-          </a>
-        </S.Breadcrumb>
-      </S.Language>
-      <button>Sign In</button>
+      <S.HeaderWrapper>
+        <S.NetflixImage src="/netflix.png" />
+        <S.testing>
+          <S.Language>
+            <S.WorldImage src="/world.png/" />
+            <S.Breadcrumb overlay={menu} trigger={["click"]}>
+              <a
+                className="ant-dropdown-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                English <DownOutlined />
+              </a>
+            </S.Breadcrumb>
+          </S.Language>
+          <S.SignButton>Sign In</S.SignButton>
+        </S.testing>
+      </S.HeaderWrapper>
     </S.Wrapper>
   );
 }
