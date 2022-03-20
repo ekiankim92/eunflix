@@ -12,7 +12,7 @@ export default function HeaderUI() {
       <img src="/search.png/" />
       <div>키즈</div>
       <img src="/bell.png/" />
-      <div>Icons</div>
+      <div>User information</div>
     </S.Wrapper>
   );
 }
