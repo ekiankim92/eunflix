@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   opacity: 0.9;
-  border-bottom: 10px solid #222222;
+  border-bottom: 12px solid #414a4c;
 `;
 
 export const NetflixImage = styled.img`
@@ -35,7 +35,7 @@ export const Language = styled.span`
   align-items: center;
   width: 100px;
   height: 34px;
-  border: 1px solid #eee;
+  border: 1px solid #fff;
   border-radius: 2px;
 `;
 
@@ -49,7 +49,7 @@ export const Breadcrumb = styled(Dropdown)`
 export const WorldImage = styled.img`
   width: 18px;
   height: 18px;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 10px;
   margin-top: 6px;
 `;
@@ -74,23 +74,23 @@ export const SecondWrapper = styled.div`
 `;
 
 export const CatchPhraseOne = styled.h1`
-  color: #eee;
+  color: #fff;
   font-size: 60px;
 `;
 
 export const CatchPhraseTwo = styled.h1`
-  color: #eee;
+  color: #fff;
   font-size: 60px;
   margin-top: -30px;
 `;
 
 export const CatchPhraseThree = styled.h2`
-  color: #eee;
+  color: #fff;
   padding: 4px;
 `;
 
 export const CatchPhraseFour = styled.h2`
-  color: #eee;
+  color: #fff;
   margin: 0px 0px 16px 0px;
 `;
 
@@ -107,10 +107,83 @@ export const InputEmail = styled.input`
 export const StartButton = styled.button`
   width: 210px;
   height: 62px;
-  color: #eee;
+  color: #fff;
   font-weight: 400;
   font-size: 18px;
   background-color: #e50914;
   border: none;
   cursor: pointer;
+`;
+
+export const ThirdWrapper = styled.div`
+  display: flex;
+  height: 400px;
+  border-bottom: 12px solid #414a4c;
+  background-color: #000;
+`;
+
+export const ThirdLeftSection = styled.section`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+`;
+
+export const ThirdTitle = styled.h1`
+  font-size: 38px;
+  color: #fff;
+`;
+
+export const ThirdContents = styled.h2`
+  font-size: 26px;
+  color: #fff;
+`;
+
+export const ThirdRightSection = styled.section`
+  width: 50%;
+`;
+
+export const TelevisionImage = styled.img`
+  width: 50%;
+  height: 52.5%;
+  position: absolute;
+`;
+
+export const TelevisionVideo = styled.video`
+  /* position: relative; */
+  /* z-index: 1; */
+  width: 99%;
+  height: 76%;
+`;
+
+export const FourthWrapper = styled.div`
+  height: 400px;
+  border-bottom: 12px solid #414a4c;
+  background-color: lightcoral;
+`;
+
+export const FifthWrapper = styled.div`
+  height: 400px;
+  border-bottom: 12px solid #414a4c;
+  background-color: khaki;
+`;
+
+export const SixthWrapper = styled.div`
+  height: 400px;
+  border-bottom: 12px solid #414a4c;
+  background-color: beige;
+`;
+
+export const SeventhWrapper = styled.div`
+  height: 800px;
+  border-bottom: 12px solid #414a4c;
+  background-color: aqua;
+`;
+
+export const EighthWrapper = styled.div`
+  height: 400px;
+  border-bottom: 12px solid #414a4c;
+  background-color: darkseagreen;
 `;
