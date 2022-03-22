@@ -82,7 +82,7 @@ export default function LandingUI(props: PropsLandingUI) {
       </S.Wrapper>
       <S.ThirdWrapper>
         <S.ThirdLeftSection>
-          <S.ThirdTitle>Enjoy on your TV</S.ThirdTitle>
+          <S.ThirdTitle>Enjoy on your TV.</S.ThirdTitle>
           <S.ThirdContents>
             Watch on Smart TVs, Playstation, Xbox, <br /> Chromecast, Apple TV,
             Blu-ray players, and <br /> more.
@@ -99,7 +99,27 @@ export default function LandingUI(props: PropsLandingUI) {
         </S.ThirdRightSection>
       </S.ThirdWrapper>
       <S.FourthWrapper>
-        <div>Download your shows to watch offline</div>
+        <S.FourthLeftSection>
+          <S.PhoneImage src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" />
+        </S.FourthLeftSection>
+        <S.StrangerWrapper>
+          <S.StrangerImage src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
+          <S.InnerStrangerWrapper>
+            <S.StrangerThings>Stranger Things</S.StrangerThings>
+            <S.Downloading>Downloading...</S.Downloading>
+          </S.InnerStrangerWrapper>
+          {/* <S.DownloadImg src="/downloading.png/" /> */}
+          <S.DownloadImg src="https://ak.picdn.net/shutterstock/videos/22287508/thumb/1.jpg" />
+        </S.StrangerWrapper>
+        <S.FourthRightSection>
+          <S.FourthTitle>
+            Download your shows <br /> to watch offline.
+          </S.FourthTitle>
+          <S.FourthContents>
+            Save your favorites easily and always have <br /> somethiing to
+            watch.
+          </S.FourthContents>
+        </S.FourthRightSection>
       </S.FourthWrapper>
       <S.FifthWrapper>
         <div>Watch everywhere</div>

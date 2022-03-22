@@ -159,31 +159,105 @@ export const TelevisionVideo = styled.video`
 `;
 
 export const FourthWrapper = styled.div`
+  display: flex;
   height: 400px;
   border-bottom: 12px solid #414a4c;
-  background-color: lightcoral;
+  background-color: #000;
+`;
+
+export const FourthLeftSection = styled.section`
+  width: 50%;
+  background-color: blue;
+`;
+
+export const PhoneImage = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export const StrangerWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 382px;
+  border: 1px solid #808080;
+  border-radius: 0.75em;
+  margin: 300px 0px 0px 164px;
+  background-color: #000;
+`;
+
+export const InnerStrangerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 130px;
+`;
+
+export const StrangerImage = styled.img`
+  width: 52px;
+  height: 70px;
+`;
+
+export const StrangerThings = styled.div`
+  color: #fff;
+`;
+
+export const Downloading = styled.div`
+  color: #0071eb;
+`;
+
+export const DownloadImg = styled.img`
+  width: 30px;
+  height: 30px;
+`;
+
+export const FourthRightSection = styled.section`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+`;
+
+export const FourthTitle = styled.h1`
+  font-size: 38px;
+  color: #fff;
+`;
+
+export const FourthContents = styled.h2`
+  font-size: 26px;
+  color: #fff;
 `;
 
 export const FifthWrapper = styled.div`
+  /* display: flex; */
   height: 400px;
   border-bottom: 12px solid #414a4c;
+  /* background-color: #000; */
   background-color: khaki;
 `;
 
 export const SixthWrapper = styled.div`
+  display: flex;
   height: 400px;
   border-bottom: 12px solid #414a4c;
+  /* background-color: #000; */
   background-color: beige;
 `;
 
 export const SeventhWrapper = styled.div`
+  display: flex;
   height: 800px;
   border-bottom: 12px solid #414a4c;
+  /* background-color: #000; */
   background-color: aqua;
 `;
 
 export const EighthWrapper = styled.div`
+  display: flex;
   height: 400px;
   border-bottom: 12px solid #414a4c;
+  /* background-color: #000; */
   background-color: darkseagreen;
 `;
