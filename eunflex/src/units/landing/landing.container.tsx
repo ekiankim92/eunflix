@@ -3,6 +3,7 @@ import LandingUI from "./landing.presenter";
 
 export default function Landing() {
   const [korean, setKorean] = useState<boolean>(false);
+  const [isMore, setIsMore] = useState<boolean>(false);
 
   const onClickKorean = () => {
     setKorean(true);
@@ -12,11 +13,17 @@ export default function Landing() {
     setKorean(false);
   };
 
+  const onClickShowMore = () => {
+    setIsMore((prev) => !prev);
+  };
+
   return (
     <LandingUI
       korean={korean}
+      isMore={isMore}
       onClickKorean={onClickKorean}
       onClickEnglish={onClickEnglish}
+      onClickShowMore={onClickShowMore}
     />
   );
 }

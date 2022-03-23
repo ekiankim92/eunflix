@@ -128,7 +128,6 @@ export const ThirdLeftSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
 `;
 
 export const ThirdTitle = styled.h1`
@@ -167,7 +166,6 @@ export const FourthWrapper = styled.div`
 
 export const FourthLeftSection = styled.section`
   width: 50%;
-  background-color: blue;
 `;
 
 export const PhoneImage = styled.img`
@@ -217,7 +215,6 @@ export const FourthRightSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
 `;
 
 export const FourthTitle = styled.h1`
@@ -242,16 +239,102 @@ export const SixthWrapper = styled.div`
   display: flex;
   height: 400px;
   border-bottom: 12px solid #414a4c;
-  /* background-color: #000; */
-  background-color: beige;
+  background-color: #000;
+`;
+
+export const SixthLeftSection = styled.section`
+  width: 50%;
+`;
+
+export const KidsImage = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export const SixthRightSection = styled.section`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SixthTitle = styled.h1`
+  font-size: 38px;
+  color: #fff;
+`;
+
+export const SixthContents = styled.h2`
+  font-size: 26px;
+  color: #fff;
 `;
 
 export const SeventhWrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   height: 800px;
   border-bottom: 12px solid #414a4c;
   /* background-color: #000; */
   background-color: aqua;
+`;
+
+export const SeventhTitle = styled.h1`
+  font-size: 42px;
+  color: #fff;
+`;
+
+export const NetflixWrapper = styled.div`
+  display: flex;
+  width: 812px;
+  height: 72px;
+  padding: 12px;
+  margin-bottom: 6px;
+  background-color: #303030;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const Netflix = styled.div`
+  width: 50%;
+  color: #fff;
+  font-size: 32px;
+  margin-left: 26px;
+`;
+
+export const PlusSign = styled.div`
+  width: 50%;
+  color: #fff;
+  font-size: 42px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 16px;
+`;
+
+export const XSign = styled.div`
+  width: 50%;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 16px;
+`;
+
+export const SeventhContents = styled.div`
+  width: 812px;
+  height: 380px;
+  margin-top: -4px;
+  background-color: #303030;
+`;
+
+export const FirstContents = styled.div`
+  color: #fff;
+  font-size: 26px;
+  padding: 26px 64px;
 `;
 
 export const EighthWrapper = styled.div`

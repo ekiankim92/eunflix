@@ -122,13 +122,53 @@ export default function LandingUI(props: PropsLandingUI) {
         </S.FourthRightSection>
       </S.FourthWrapper>
       <S.FifthWrapper>
-        <div>Watch everywhere</div>
+        <div>Watch everywhere.</div>
       </S.FifthWrapper>
       <S.SixthWrapper>
-        <div>Create profiles for kids</div>
+        <S.SixthLeftSection>
+          <S.KidsImage src="https://occ-0-993-325.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABdFTpLmANuJpYneLq8L5m7CunMCi8e8Nl4y7xaPVWzG3IeoDoq17egTQAthApKg_4sdRWdwuR8KadWu1frjL3JQImpwq.png?r=fcd" />
+        </S.SixthLeftSection>
+        <S.SixthRightSection>
+          <S.SixthTitle>Create profiles for kids.</S.SixthTitle>
+          <S.SixthContents>
+            Send kids on adventures with their favorite <br /> characters in a
+            space made just for them- <br /> free with your membership.
+          </S.SixthContents>
+        </S.SixthRightSection>
       </S.SixthWrapper>
       <S.SeventhWrapper>
-        <div>Frequently Asked Questions</div>
+        <S.SeventhTitle>
+          {props.korean ? "자주 묻는 질문" : "Frequently Asked Questions"}
+        </S.SeventhTitle>
+        <S.NetflixWrapper onClick={props.onClickShowMore}>
+          <S.Netflix>
+            {props.korean ? "넷플릭스란 무엇인가요?" : "What is Netflix?"}
+          </S.Netflix>
+          {!props.isMore && <S.PlusSign>+</S.PlusSign>}
+          {props.isMore && <S.XSign>X</S.XSign>}
+        </S.NetflixWrapper>
+        {props.isMore && (
+          <div>
+            <S.SeventhContents>
+              <S.FirstContents>
+                Netflix is a streaming service that offers a wide variety of
+                award-winning TV shows, movies, anime, documentaries, and more
+                on thousands of internet-connected devices.
+                <br />
+                <br />
+                You can watch as much as you want, whenever you want without a
+                single commercial – all for one low monthly price. There&apos;s
+                always something new to discover and new TV shows and movies are
+                added every week!
+              </S.FirstContents>
+            </S.SeventhContents>
+          </div>
+        )}
+        <div>How much does Netflix cost?</div>
+        <div>Where can I watch?</div>
+        <div>How do I cancel?</div>
+        <div>What can I watch on Netflix?</div>
+        <div>is Netflix good for kids?</div>
       </S.SeventhWrapper>
       <S.EighthWrapper>
         <div>Questions? Call 080-001-9588</div>
