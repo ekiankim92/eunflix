@@ -165,6 +165,11 @@ export default function LandingUI(props: PropsLandingUI) {
           </div>
         )}
         <div>How much does Netflix cost?</div>
+        <div>
+          Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+          streaming device, all for one fixed monthly fee. Plans range from
+          KRW9,500 to KRW17,000 a month. No extra costs, no contracts.
+        </div>
         <div>Where can I watch?</div>
         <div>How do I cancel?</div>
         <div>What can I watch on Netflix?</div>
