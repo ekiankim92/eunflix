@@ -104,6 +104,12 @@ export const InputEmail = styled.input`
   border: none;
 `;
 
+export const ErrorMessage = styled.div`
+  width: 692px;
+  margin-top: 6px;
+  color: #ffa00a;
+`;
+
 export const StartButton = styled.button`
   width: 210px;
   height: 62px;
@@ -274,7 +280,7 @@ export const SeventhWrapper = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  height: 800px;
+  /* height: 800px; */
   border-bottom: 12px solid #414a4c;
   /* background-color: #000; */
   background-color: aqua;
@@ -332,6 +338,38 @@ export const SeventhContents = styled.div`
 `;
 
 export const FirstContents = styled.div`
+  color: #fff;
+  font-size: 26px;
+  padding: 26px 64px;
+`;
+
+export const NetflixCostWrapper = styled.div`
+  display: flex;
+  width: 812px;
+  height: 72px;
+  padding: 12px;
+  margin: 6px auto;
+  background-color: #303030;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const NetflixCost = styled.div`
+  width: 60%;
+  color: #fff;
+  font-size: 32px;
+  margin-left: 26px;
+`;
+
+export const SeventhSecondContents = styled.div`
+  width: 812px;
+  height: 216px;
+  margin-top: -4px;
+  background-color: #303030;
+`;
+
+export const NetflixCostContents = styled.div`
   color: #fff;
   font-size: 26px;
   padding: 26px 64px;

@@ -68,15 +68,23 @@ export default function LandingUI(props: PropsLandingUI) {
               : "Ready to watch? Enter your email to create or restart your membership."}
           </S.CatchPhraseFour>
           {props.korean ? (
-            <div>
-              <S.InputEmail placeholder="이메일 주소" />
-              <S.StartButton>시작하기 {">"}</S.StartButton>
-            </div>
+            <>
+              <div>
+                <S.InputEmail placeholder="이메일 주소" />
+                <S.StartButton>시작하기 {">"}</S.StartButton>
+              </div>
+              <S.ErrorMessage>{props.emailError}</S.ErrorMessage>
+            </>
           ) : (
-            <div>
-              <S.InputEmail placeholder="Email address" />
-              <S.StartButton>Get Started {">"}</S.StartButton>
-            </div>
+            <>
+              <div onChange={props.onChangeEmail}>
+                <S.InputEmail placeholder="Email address" />
+                <S.StartButton onClick={props.onClickGetStarted}>
+                  Get Started {">"}
+                </S.StartButton>
+              </div>
+              <S.ErrorMessage>{props.emailError}</S.ErrorMessage>
+            </>
           )}
         </S.SecondWrapper>
       </S.Wrapper>
@@ -151,25 +159,36 @@ export default function LandingUI(props: PropsLandingUI) {
           <div>
             <S.SeventhContents>
               <S.FirstContents>
-                Netflix is a streaming service that offers a wide variety of
-                award-winning TV shows, movies, anime, documentaries, and more
-                on thousands of internet-connected devices.
+                {props.korean
+                  ? "넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다."
+                  : "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."}
                 <br />
                 <br />
-                You can watch as much as you want, whenever you want without a
-                single commercial – all for one low monthly price. There&apos;s
-                always something new to discover and new TV shows and movies are
-                added every week!
+                {props.korean
+                  ? "저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다."
+                  : "You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There&apos;s always something new to discover and new TV shows and movies are added every week!"}
               </S.FirstContents>
             </S.SeventhContents>
           </div>
         )}
-        <div>How much does Netflix cost?</div>
-        <div>
-          Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
-          streaming device, all for one fixed monthly fee. Plans range from
-          KRW9,500 to KRW17,000 a month. No extra costs, no contracts.
-        </div>
+        <S.NetflixCostWrapper onClick={props.onClickShowMoreCost}>
+          <S.NetflixCost>
+            {props.korean
+              ? "넷플릭스 요금은 얼마인가요?"
+              : "How much does Netflix cost?"}
+          </S.NetflixCost>
+          {!props.isCost && <S.PlusSign>+</S.PlusSign>}
+          {props.isCost && <S.XSign>X</S.XSign>}
+        </S.NetflixCostWrapper>
+        {props.isCost && (
+          <S.SeventhSecondContents>
+            <S.NetflixCostContents>
+              {props.korean
+                ? "스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한 디바이스에서 월정액 요금 하나로 넷플릭스를 시청하세요. 멤버십 요금은 월 9,500원부터 17,000원까지 다양합니다. 추가 비용이나 약정이 없습니다."
+                : "Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from KRW9,500 to KRW17,000 a month. No extra costs, no contracts."}
+            </S.NetflixCostContents>
+          </S.SeventhSecondContents>
+        )}
         <div>Where can I watch?</div>
         <div>How do I cancel?</div>
         <div>What can I watch on Netflix?</div>
