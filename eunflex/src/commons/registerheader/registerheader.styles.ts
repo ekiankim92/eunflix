@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   height: 100px;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #d3d3d3;
 `;
 
 export const NetflixImage = styled.img`

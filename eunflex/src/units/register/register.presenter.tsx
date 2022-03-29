@@ -5,6 +5,7 @@ import TextField from "@mui/material/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
+import RegisterFooter from "../../commons/registerfooter/registerfooter.container";
 
 const useStyles = makeStyles((theme) => ({
   input: {
@@ -75,6 +76,7 @@ export default function RegisterUI() {
           <S.Button>Agree and Next</S.Button>
         </S.ButtonWrapper>
       </S.Wrapper>
+      <RegisterFooter />
     </>
   );
 }
