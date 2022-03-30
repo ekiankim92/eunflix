@@ -48,4 +48,12 @@ export const Button = styled.button`
   background-color: #e50914;
   border-radius: 4px;
   border: none;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const ErrorMessage = styled.div`
+  color: #e50914;
+  font-size: 10px;
 `;
