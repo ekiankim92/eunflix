@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
   margin: 0px auto;
   width: 100%;
   height: 700px;
-  background-image: url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
