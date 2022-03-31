@@ -45,7 +45,9 @@ export default function LandingUI(props: PropsLandingUI) {
                 </S.Breadcrumb>
               </S.BreadcrumbWrapper>
             </S.Language>
-            <S.SignButton>{props.korean ? "로그인" : "Sign In"}</S.SignButton>
+            <S.SignButton onClick={props.onClickSignIn}>
+              {props.korean ? "로그인" : "Sign In"}
+            </S.SignButton>
           </S.OptionWrapper>
         </S.HeaderWrapper>
         <S.SecondWrapper>
@@ -77,7 +79,10 @@ export default function LandingUI(props: PropsLandingUI) {
             </>
           ) : (
             <>
-              <div onChange={props.onChangeEmail}>
+              <div
+                onChange={props.onChangeEmail}
+                onClick={props.onClickRegister}
+              >
                 <S.InputEmail placeholder="Email address" />
                 <S.StartButton onClick={props.onClickGetStarted}>
                   Get Started {">"}

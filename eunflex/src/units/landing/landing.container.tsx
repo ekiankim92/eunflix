@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { ChangeEvent, useState } from "react";
 import LandingUI from "./landing.presenter";
 
@@ -7,6 +8,17 @@ export default function Landing() {
   const [isCost, setIsCost] = useState<boolean>(false);
   const [email, setEmail] = useState<string>("");
   const [emailError, setEmailError] = useState<string>("");
+
+  const router = useRouter();
+
+  const onClickRegister = () => {
+    if (!email) return;
+    router.push("/register");
+  };
+
+  const onClickSignIn = () => {
+    router.push("/signin");
+  };
 
   const onChangeEmail = (event: ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -51,6 +63,8 @@ export default function Landing() {
       onClickShowMore={onClickShowMore}
       onClickShowMoreCost={onClickShowMoreCost}
       onClickGetStarted={onClickGetStarted}
+      onClickRegister={onClickRegister}
+      onClickSignIn={onClickSignIn}
     />
   );
 }

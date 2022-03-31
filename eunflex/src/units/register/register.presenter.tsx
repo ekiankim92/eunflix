@@ -73,17 +73,16 @@ export default function RegisterUI(props) {
             {...register("password")}
           />
         </Box>
+        <S.FirstCheckboxWrapper>
+          <S.CheckboxWrapper>
+            <S.CheckboxInput type="checkbox" required />
+          </S.CheckboxWrapper>
+          <S.CheckboxContents>
+            Yes, I consent to collection and use of my personal information in
+            accordance with the Privacy Statement
+          </S.CheckboxContents>
+        </S.FirstCheckboxWrapper>
         <FormGroup>
-          <S.FirstCheckbox
-            control={<Checkbox />}
-            sx={{ "& .MuiSvgIcon-root": { fontSize: 38 } }}
-            label="Yes, I consent to collection and use of my personal information in
-            accordance with the Privacy Statement"
-            // onChange={props.handleChange}
-            onChange={(event) => {
-              props.onClickRegister(event.currentTarget.checked, "check");
-            }}
-          />
           <S.SecondCheckbox
             control={<Checkbox />}
             sx={{ "& .MuiSvgIcon-root": { fontSize: 38 } }}

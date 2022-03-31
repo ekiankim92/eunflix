@@ -24,8 +24,26 @@ export const SecondSentence = styled.div`
   margin: 12px 0px;
 `;
 
-export const FirstCheckbox = styled(FormControlLabel)`
+export const FirstCheckboxWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const CheckboxWrapper = styled.div`
+  width: 30px;
+  height: 28px;
+  border: 3px solid #615a5a;
+  margin-left: 2px;
+`;
+
+export const CheckboxContents = styled.div`
   color: #333;
+  margin-left: 20px;
+`;
+
+export const CheckboxInput = styled.input`
+  width: 23px;
+  height: 23px;
 `;
 
 export const SecondCheckbox = styled(FormControlLabel)`
@@ -36,7 +54,6 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 24px;
-  background-color: yellow;
 `;
 
 export const Button = styled.button`
