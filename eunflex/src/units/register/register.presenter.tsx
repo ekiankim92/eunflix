@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     background: "rgb(255,255,255)",
   },
   root: {
-    background: "white",
+    background: "#fff",
   },
 }));
 
@@ -55,6 +55,9 @@ export default function RegisterUI(props) {
             variant="filled"
             className={classes.root}
             InputProps={{ className: classes.input }}
+            InputLabelProps={{
+              style: { color: "#808080" },
+            }}
             style={{ marginBottom: "30px" }}
             name="email"
             {...register("email")}
@@ -68,6 +71,9 @@ export default function RegisterUI(props) {
             variant="filled"
             className={classes.root}
             InputProps={{ className: classes.input }}
+            InputLabelProps={{
+              style: { color: "#808080" },
+            }}
             style={{ marginBottom: "30px" }}
             name="password"
             {...register("password")}

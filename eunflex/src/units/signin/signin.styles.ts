@@ -22,7 +22,53 @@ export const SignInWrapper = styled.div`
 `;
 
 export const SignIn = styled.h1`
-  /* width: 160px; */
   color: #fff;
   font-size: 32px;
+  padding: 40px 0px 0px 64px;
+`;
+
+export const InputWrapper = styled.div`
+  text-align: center;
+`;
+
+export const ButtonWrapper = styled.div`
+  text-align: center;
+  margin-top: 24px;
+`;
+
+export const CheckboxWrapper = styled.div`
+  width: 380px;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  margin-left: 50px;
+`;
+
+export const Checkbox = styled.input`
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+`;
+
+export const RememberMe = styled.span`
+  color: #808080;
+`;
+
+export const NeedHelpWrapper = styled.div`
+  width: 200px;
+  text-align: right;
+`;
+
+export const NeedHelp = styled.span`
+  color: #808080;
+`;
+
+export const SignInButton = styled.button`
+  width: 314px;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background-color: #e50914;
 `;
