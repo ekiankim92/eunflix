@@ -7,7 +7,7 @@ import { FormValues } from "./register.types";
 export default function Register() {
   const [createUser] = useMutation(CREATE_USER);
 
-  const onClickRegister = async (data: FormValues, checked, id) => {
+  const onClickRegister = async (data: FormValues) => {
     try {
       const result = await createUser({
         variables: {

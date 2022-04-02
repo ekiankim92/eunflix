@@ -3,8 +3,9 @@ import RegisterFooterBlk from "../../commons/registerfooterblk/registerfooterblk
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import { PropsSignInUI } from "./signin.types";
 
-export default function SignInUI() {
+export default function SignInUI(props: PropsSignInUI) {
   const useStyles = makeStyles((theme) => ({
     root: {
       background: "#333",
@@ -77,6 +78,36 @@ export default function SignInUI() {
               <S.NeedHelp>Need help?</S.NeedHelp>
             </S.NeedHelpWrapper>
           </S.CheckboxWrapper>
+          <S.FacebookWrapper>
+            <S.FacebookImg src="facebook.png/" />
+            <S.LoginFacebook>Login with Facebook</S.LoginFacebook>
+          </S.FacebookWrapper>
+          <S.NewToNetflix>
+            New to Netflix?
+            <S.SignUpNow onClick={props.onClickRegister}>
+              Sign up now.
+            </S.SignUpNow>
+          </S.NewToNetflix>
+          <S.ReCaptcha>
+            This page is protected by Google reCAPTCHA to ensure you&apos;re not
+            a bot.
+            {!props.learnMore ? (
+              <S.LearnMore onClick={props.onClickLearnMore}>
+                Learn more.
+              </S.LearnMore>
+            ) : (
+              <span></span>
+            )}
+          </S.ReCaptcha>
+          {props.learnMore && (
+            <S.Privacy>
+              The information collected by Google reCAPTCHA is subject to the
+              Google Privacy Policy and Terms of Service, and is used for
+              providing, maintaining, and improving the reCAPTCHA service and
+              for general security purposes (it is not used for personalized
+              advertising by Google).
+            </S.Privacy>
+          )}
         </S.SignInWrapper>
       </S.Wrapper>
       <RegisterFooterBlk />
