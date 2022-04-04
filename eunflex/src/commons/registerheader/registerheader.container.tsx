@@ -8,5 +8,9 @@ export default function RegisterHeader() {
     router.push("/landingpage");
   };
 
-  return <RegisterHeaderUI onClickLandingPage={onClickLandingPage} />;
+  const onClickSignIn = () => {
+    router.push("/signin")
+  }
+
+  return <RegisterHeaderUI onClickLandingPage={onClickLandingPage} onClickSignIn={onClickSignIn}/>;
 }
